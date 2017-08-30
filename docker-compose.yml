@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+    command: /bin/bash
+    volumes:
+      - .:/rspec_sample
+    tty: true
